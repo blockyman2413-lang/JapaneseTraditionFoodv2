@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japanese Food Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="foods.html">THE FOODS</a>
+    <a href="recipes.html">RECIPES</a>
+    <a href="contact.html">CONTACT US</a>
+    <span class="flag">🇯🇵</span>
+  </nav>
+
+<!-- Main heading title, Boleh tukar kalau nak -->
+
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>JAPANESE FOOD EXPLORER</h1>
+      <p>Discover traditional taste, culture, and stories from Japan.</p>
+      <blockquote>“Food is a bridge between culture, history, and people.”</blockquote>
+    </div>
+  </header>
+
+<!-- Tempat letak small word atau kata2 -->
+
+  <section class="intro">
+    <h2>Welcome</h2>
+    <p>This website shares traditional Japanese foods, their short history, and simple recipes for learning purpose.</p>
+  </section>
+
+<!-- Gambar preview makanan, boleh tekan Learn more and sites akan redirect -->
+
+  <section class="home-food-grid">
+    <div class="home-card"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80"><h2>Sushi</h2><a class="learn-btn" href="foods.html">Learn More</a></div>
+    <div class="home-card"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=900&q=80"><h2>Ramen</h2><a class="learn-btn" href="foods.html">Learn More</a></div>
+    <div class="home-card"><img src="https://cdn.media.amplience.net/i/japancentre/Recipe-313-tempura/Tempura?$poi$&w=700&h=410&sm=c&fmt=auto"><h2>Tempura</h2><a class="learn-btn" href="foods.html">Learn More</a></div>
+    <div class="home-card"><img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2025/06/ART_rev1-85-1200x675.jpg"><h2>Mochi</h2><a class="learn-btn" href="foods.html">Learn More</a></div>
+    <div class="home-card"><img src="https://www.justonecookbook.com/wp-content/uploads/2014/12/Soba-Noodle-Soup-2-1.jpg"><h2>Soba</h2><a class="learn-btn" href="foods.html">Learn More</a></div>
+    <div class="home-card"><img src="https://images.deliveryhero.io/image/fd-my/LH/l7po-listing.jpg"><h2>Takoyaki</h2><a class="learn-btn" href="foods.html">Learn More</a></div>
+  </section>
+
+<!-- Link ke login sites. Fb, Insta, Tiktok, twitter. Sizing ada kat style.css file -->
+
+  <footer id="homeFooter" class="small-footer">
+    <p>Follow us:</p>
+    <a href="https://www.instagram.com/accounts/login/">Instagram</a>
+    <a href="https://www.facebook.com/login/">Facebook</a>
+    <a href="https://www.tiktok.com/login">TikTok</a>
+    <a href="https://x.com/i/flow/login">X</a>
+  </footer>
+
+<!-- Sini adjust music kalau nak auto play bila masuk web atau manual on/off. Function ada kat script. Kalau nk ubah logo ada dlm style.css -->
+
+<audio id="bgMusic" autoplay loop controls>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle">🔊</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Slot utk index, about,food and etc etc -->
+
+<nav class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="foods.html">THE FOODS</a>
+    <a href="recipes.html">RECIPES</a>
+    <a href="contact.html">CONTACT US</a>
+
+    <!-- Search Japanese Food -->
+    <form
+action="https://www.google.com/search"
+method="GET"
+target="_blank"
+class="search-bar">
+
+<!-- Force search japanese food only - still testing btw -->		
+
+    <input
+    type="text"
+    name="q"
+    placeholder="Search Japanese Food..."
+    onfocus="this.value='Japanese Food ';">
+
+    <button type="submit">🔍</button>
+
+</form>
+
+    <span class="flag">🇯🇵</span>
+</nav>

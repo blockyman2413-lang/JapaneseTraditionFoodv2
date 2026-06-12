@@ -1,0 +1,46 @@
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}html{scroll-behavior:smooth;scroll-snap-type:y mandatory}body{background:#111;color:white}.navbar{height:80px;background:linear-gradient(90deg,#b83b3b,#ef6c66);display:flex;align-items:center;gap:45px;padding:0 40px;position:sticky;top:0;z-index:1000}.navbar a{color:white;text-decoration:none;font-weight:bold;font-size:14px}.flag{margin-left:auto;background:white;padding:4px 10px;border-radius:2px}.hero{height:75vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=1600&q=80') center/cover}.hero-overlay{text-align:center;padding-top:110px}.hero h1{font-size:48px}.hero p,.hero blockquote{margin-top:20px;font-size:20px}.intro{text-align:center;padding:50px 15%}.intro h2{color:#ff8c82;margin-bottom:15px}.home-food-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;padding:40px}.home-card{height:55vh;position:relative;border-radius:15px;overflow:hidden;background:#222}.home-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.65)}.home-card h2{position:absolute;left:35px;bottom:90px;font-size:36px}.learn-btn{position:absolute;left:35px;bottom:35px;color:white;text-decoration:none;border:2px solid white;padding:12px 24px;border-radius:30px;background:rgba(0,0,0,.4);transition:.25s}.learn-btn:hover{transform:translateY(-8px);border-color:#ff7979;box-shadow:0 0 18px #ff7979}.small-footer{position:fixed;bottom:-90px;left:0;width:100%;background:#c94d4d;text-align:center;padding:14px;transition:.5s;z-index:999}.small-footer.show{bottom:0}.small-footer a,.contact-footer a{color:white;margin:0 12px;text-decoration:none}.simple-page{min-height:calc(100vh - 80px);display:flex;flex-direction:column;justify-content:center;text-align:center;padding:10%;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.8)),url('https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=1600&q=80') center/cover}.simple-page h1{font-size:50px;color:#ff8c82;margin-bottom:25px}.simple-page p{font-size:22px;line-height:1.6}.foods-page{height:calc(100vh - 80px);padding:20px 40px}.foods-page h1{text-align:center;margin-bottom:20px}.food-grid-six{height:calc(100% - 65px);display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:18px}.food-box{position:relative;overflow:hidden;border-radius:14px;text-decoration:none;color:white;transition:.3s}.food-box img{width:100%;height:100%;object-fit:cover;filter:brightness(.75);transition:.3s}.food-box:hover{transform:translateY(-10px)}.food-info{position:absolute;inset:0;background:rgba(0,0,0,.72);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:25px;opacity:0;transition:.3s}.food-box:hover .food-info{opacity:1}.food-info h2{font-size:32px;margin-bottom:12px;color:#ff9b92}.recipe-jump{position:fixed;right:20px;top:110px;z-index:999;display:flex;flex-direction:column;gap:10px}.recipe-jump a{background:#d95757;color:white;text-decoration:none;padding:8px 14px;border-radius:20px;font-size:13px}.recipe-section{height:100vh;scroll-snap-align:start;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding-top:80px}.recipe-section img{width:100%;height:100%;object-fit:cover}.recipe-text{padding:70px;animation:slideIn .9s ease}.recipe-text h1{font-size:48px;color:#ff8c82;margin-bottom:20px}.recipe-text p{font-size:22px;line-height:1.6}.contact-page{min-height:calc(100vh - 150px);display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),url('https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1600&q=80') center/cover}.contact-form{width:420px;background:rgba(255,255,255,.12);padding:35px;border-radius:18px;backdrop-filter:blur(6px)}.contact-form h1{text-align:center;margin-bottom:20px}.contact-form input,.contact-form textarea{width:100%;padding:14px;margin:10px 0;border:0;border-radius:8px}.contact-form textarea{height:120px}.contact-form button{width:100%;padding:14px;background:#e66161;color:white;border:0;border-radius:8px;font-weight:bold;cursor:pointer}#successMsg{display:none;color:#59ff73;text-align:center;margin-top:15px;font-weight:bold}.contact-footer{height:70px;background:#c94d4d;display:flex;align-items:center;justify-content:center}@keyframes slideIn{from{opacity:0;transform:translateX(70px)}to{opacity:1;transform:translateX(0)}}@media(max-width:800px){.navbar{gap:12px;padding:0 10px}.home-food-grid,.food-grid-six,.recipe-section{grid-template-columns:1fr}.food-grid-six{grid-template-rows:auto;height:auto}.foods-page{height:auto}.recipe-section{height:auto}.hero h1{font-size:34px}}
+
+/* Untuk tukar FONTS semua sites ni */
+/* Mula2 panjang script ni and pening skit tpi aq guna ai untuk minified CSS, supaya cpt skit */
+
+/* Notes - Ni music punya Logo kalau nak adjust */
+
+#musicToggle{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:10px 15px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+/* Search Bar bawah skali */
+
+.search-bar{
+    display:flex;
+    align-items:center;
+    margin-left:20px;
+}
+
+.search-bar input{
+    padding:8px 12px;
+    border:none;
+    border-radius:20px 0 0 20px;
+    outline:none;
+    width:180px;
+}
+
+.search-bar button{
+    padding:8px 12px;
+    border:none;
+    background:#fff;
+    cursor:pointer;
+    border-radius:0 20px 20px 0;
+}
+
+/* #f0f0f0 tu colour utk background */
+
+.search-bar button:hover{
+    background:#f0f0f0;
+}
